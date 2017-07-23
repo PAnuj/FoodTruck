@@ -19,7 +19,7 @@ public class UserController extends Controller {
 	
 	UserService service = new UserService();
 	
-	public CompletableFuture<Result> getTrucksByApplicantName(String applicantName) throws InterruptedException, ExecutionException, JsonProcessingException, IOException {
+	public CompletableFuture<Result> getTrucksByApplicantName() throws InterruptedException, ExecutionException, JsonProcessingException, IOException {
 		CompletableFuture<Result> result = new CompletableFuture<>();
 		JsonNode request = request().body().asJson();
 		play.data.Form<ApplicantNameVo> requestForm = play.data.Form.form(ApplicantNameVo.class);

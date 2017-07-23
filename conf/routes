@@ -13,7 +13,7 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 #### MYGATE APIS #####
 
-POST /myGate/foodTrucks/byApplicant		controllers.UserController.getTrucksByApplicantName(applicantName : String)
+POST /myGate/foodTruck/byApplicant		controllers.UserController.getTrucksByApplicantName()
 GET /myGate/foodTRruck/expiredpermit		controllers.UserController.getExpiredPermitsByDate(date : String)
 GET /myGate/foodTruck/byStreetName		controllers.UserController.getTrucksByStreetName(streetName : String)
 GET /myGate/foodTruck/nearByTruck		controllers.UserController.getBestTruckFor(latitude : String, longitude: String)
